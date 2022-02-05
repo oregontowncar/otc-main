@@ -1,0 +1,24 @@
+$default: linear-gradient(77deg,#f5286e,#fc6d43);
+$greenGradient: linear-gradient(270deg,#76e672 0,#41c83e 100%);
+
+$white: #ffffff;
+$black: #000000;
+$darkgray: #78797a;
+$gray: #d3d3d3;
+$purple: #78068d;
+$orange: #fc6d43;
+
+
+.bg-pink-gradient {
+  background: $default;
+}
+
+.bg-green-gradient {
+  background: $greenGradient;
+}
+
+.text-pinkgradient {
+  background: $default;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

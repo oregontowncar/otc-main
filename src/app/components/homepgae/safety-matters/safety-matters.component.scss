@@ -1,0 +1,42 @@
+@import "../../../../styles.scss";
+
+.safety{
+  padding: 3.75rem 0;
+  // background-color: #e7e7c2;
+  .safety-text{
+    h5{
+      font-size: 0.938rem;
+      font-weight: 600;
+      color: $black;
+    }
+    h1{
+      font-size: 2.5rem;
+      font-weight: 600;
+      padding-top: 0.625rem;
+      color: $black;
+      @include respond(tablet) {
+        font-size: 30px;
+      }
+    }
+    p{
+      padding-top: 0.625rem;
+      font-size: 0.938rem;
+      color: $darkgray;
+      @include respond(tablet) {
+        font-size: 1rem;
+      }
+    }
+  }
+  .image{
+    @include respond(tablet) {
+      margin-top: 1.875rem;
+    }
+    img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 2.5rem 0 2.5rem 0;
+    }
+  }
+}

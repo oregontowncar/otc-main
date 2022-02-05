@@ -1,0 +1,40 @@
+<div class="fleet">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <div class="col-12 col-md-8 col-lg-8">
+        <div class="fleet-heading">
+          <h1>Our Fleet</h1>
+          <p>Choose from a wide selection of Vehicles ranging from luxury sedans, to charter Bus, we have every type of
+            luxury vehicle available to meet your needs.</p>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="fleet-cards">
+          <div class="row">
+
+            <div class="col-12 col-md-4 col-lg-3" *ngFor="let item of cards">
+              <div class="plain-card">
+                <h5>{{item.name}}</h5>
+                <img src={{item.image}}>
+
+                <div class="types">
+                  <p><i class="fas fa-bookmark"></i> {{item.dynamic}}</p>
+                  <p><i class="fas fa-bolt"></i> {{item.content}}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <p class="wrapper">*Availability and transit information varies
+                by region.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

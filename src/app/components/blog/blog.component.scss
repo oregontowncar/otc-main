@@ -1,0 +1,96 @@
+@import "../../../styles.scss";
+
+.blog{
+  padding: 3.75rem 0;
+  .blog-inner{
+    margin-top: 5rem;
+    a{
+      font-size: 1.25rem;
+      color: $black;
+      font-weight: 500;
+    }
+    .seprator{
+      width: 7%;
+      height: 3px;
+      border-radius: 0.625rem;
+      background: $default;
+      margin-top: 0.625rem;
+    }
+    .info{
+      margin-top: 1.25rem;
+      a{
+        font-size: 0.875rem;
+        color: $black;
+        padding-right: 1.25rem;
+        font-weight: 500;
+        i{
+          color: $orange;
+          padding-right: 0.188rem;
+        }
+      }
+    }
+    p{
+      font-size: 0.938rem;
+      padding-top: 1.25rem;
+      color: $darkgray;
+      @include respond(mobile) {
+        font-size: 1.063rem;
+      }
+    }
+    .points{
+      margin-top: 2.188rem;
+      ol{
+        padding-left: 15px;
+        li{
+          font-size: 0.938rem;
+          padding-top: 0.625rem;
+          color: $darkgray;
+          @include respond(mobile) {
+            font-size: 1.063rem;
+          }
+        }
+      }
+    }
+    .type{
+      margin-top: 2.188rem;
+      ul{
+        padding-left: 0;
+        list-style: none;
+        li{
+          font-size: 0.938rem;
+          padding-top: 0.625rem;
+          color: $darkgray;
+          @include respond(mobile) {
+            font-size: 1.063rem;
+          }
+          i{
+            color: $orange;
+            padding-right: 0.5rem;
+          }
+          span{
+            color: $black;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .icons{
+      margin-top: 1.25rem;
+      a{
+        border: 0.188rem solid $purple;
+        border-radius: 1.25rem;
+        padding: 0.25rem 0.375rem;
+        font-size: 0.875rem;
+        margin-right: 0.438rem;
+        color: $darkgray;
+        &:hover{
+          opacity: 0.5s;
+          transition: 0.5s;
+          color: $purple;
+          border: 0.188rem solid $orange;
+        }
+      }
+    }
+  }
+}
+

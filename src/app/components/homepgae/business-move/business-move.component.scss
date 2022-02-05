@@ -1,0 +1,54 @@
+@import "../../../../styles.scss";
+
+.business{
+  padding: 3.75rem 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-color: #121212;
+  .business-heading{
+    text-align: center;
+    h1{
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: $white;
+      @include respond(mobile) {
+        font-size: 2.375rem;
+      }
+    }
+    p{
+      padding-top: 0.625rem;
+      color: $gray;
+      font-size: 0.938rem;
+      @include respond(mobile) {
+        font-size: 1.063rem;
+      }
+    }
+  }
+  .main{
+    margin-top: 2.5rem;
+    .plain-card{
+      text-align: center;
+      @include respond(mobile) {
+        margin-top: 1.25rem;
+      }
+      img{
+        width: 70%;
+        height: auto;
+        @include respond(tablet) {
+          width: 100%;
+        }
+        @include respond(mobile) {
+          width: 70%;
+        }
+      }
+      h6{
+        padding-top: 1.875rem;
+        font-size: 17px;
+        color: $black;
+      }
+    }
+  }
+}

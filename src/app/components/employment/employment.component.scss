@@ -1,0 +1,109 @@
+@import "../../../styles.scss";
+
+.global {
+  padding: 3.75rem 0;
+  .global-inner {
+    text-align: center;
+    margin-top: 3.125rem;
+    // h1 {
+    //   font-size: 2.188rem;
+    //   color: $black;
+    //   @include respond(tablet) {
+    //     font-size: 1.875rem;
+    //   }
+    // }
+    p {
+      color: $darkgray;
+      font-size: 0.875rem;
+      padding-top: 0.625rem;
+      @include respond(tablet) {
+        font-size: 1.063rem;
+      }
+    }
+  }
+  .tabs{
+    margin-top: 2.5rem;
+    .nav-tabs{
+      border: 1px solid $gray;
+    }
+    .tab-content{
+      padding: 1.875rem 1.25rem;
+      border: 0.063rem solid $gray;
+      .tab-pane{
+        h4{
+          font-size: 1.75rem;
+          color: $black;
+          font-weight: 500;
+        }
+        p{
+          padding-top: 0.313rem;
+          font-size: 0.875rem;
+          color: $darkgray;
+          @include respond(tablet) {
+            font-size: 1rem;
+          }
+        }
+        .description{
+          margin-top: 1.875rem;
+          h5{
+            font-size: 1.125rem;
+            @include respond(tablet) {
+              font-size: 1.25rem;
+            }
+          }
+          ul{
+            padding-left: 0;
+            list-style: none;
+            margin-top: 0.313rem;
+            li{
+              font-size: 0.938rem;
+              color: $black;
+              padding-top: 0.438rem;
+              @include respond(tablet) {
+                font-size: 1.063rem;
+              }
+              i{
+                color: $purple;
+              }
+            }
+          }
+        }
+        .qualifications{
+          margin-top: 1.875rem;
+          h5{
+            font-size: 1.125rem;
+            @include respond(tablet) {
+              font-size: 1.25rem;
+            }
+          }
+          ul{
+            padding-left: 0;
+            list-style: none;
+            margin-top: 0.313rem;
+            li{
+              font-size: 0.938rem;
+              color: $black;
+              padding-top: 0.438rem;
+              @include respond(tablet) {
+                font-size: 1.063rem;
+              }
+              i{
+                color: $purple;
+              }
+            }
+          }
+        }
+        .note{
+          margin-top: 1.25rem;
+          p{
+            font-size: 0.938rem;
+            color: red;
+            @include respond(tablet) {
+              font-size: 1.063rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

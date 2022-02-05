@@ -1,0 +1,97 @@
+@import "../../../styles.scss";
+
+.footer{
+  padding: 3.75rem 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-color: #101010;
+  @include respond(mobile) {
+    padding: 0.625rem 0px 3.75rem 0;
+  }
+  .inner{
+    @include respond(mobile) {
+      margin-top: 3.438rem;
+    }
+    h3{
+      font-size: 1.25rem;
+      color: $white;
+      @include respond(tablet) {
+        font-size: 1.563rem;
+      }
+    }
+    p{
+      color: $gray;
+      font-size: 0.813rem;
+      padding-top: 1.063rem;
+      @include respond(tablet) {
+        font-size: 0.875rem;
+      }
+    }
+    .footer-btn{
+      margin-top: 1.875rem;
+    }
+    ul{
+      padding-left: 0rem;
+      list-style: none;
+      li{
+        padding-top: 1.125rem;
+        a{
+          font-size: 0.938rem;
+          color: $white;
+          @include respond(mobile) {
+            font-size: 1.063rem;
+          }
+          &:hover {
+            transition: 0.5s;
+            opacity: 0.5s;
+            color: $gray;
+          }
+        }
+      }
+    }
+    .locate{
+      margin-top: 1.25rem;
+      .icon{
+        i{
+          color: $gray;
+          border: 0.188rem solid $purple;
+          border-radius: 1.25rem;
+          padding: 0.375rem 0.438rem;
+          width: 35px;
+          height: 35px;
+          font-size: 1rem;
+          &:hover{
+            opacity: 0.5s;
+            transition: 0.5s;
+            border: 3px solid $orange;
+            color: $purple;
+          }
+        }
+      }
+      .contents{
+        h6{
+          color: $white;
+          font-size: 0.938rem;
+          @include respond(mobile) {
+            font-size: 1rem;
+          }
+        }
+        a{
+          color: $white;
+          font-size: 0.938rem;
+          font-weight: 500;
+          @include respond(mobile) {
+            font-size: 1rem;
+          }
+        }
+        p{
+          color: $gray;
+          padding-top: 0.188rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+<div class="global">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <div class="col-12">
+        <div class="page-header">
+          <div class="main-header">
+            <h1>Global Chauffeur Network</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-10 col-lg-10">
+        <div class="global-inner">
+          <!-- <h1>Global Chauffeur Network</h1> -->
+          <p>Here at Oregon Town car, we take pride in our ability to deliver the best service when managing your
+            transportation needs throughout your journey. Our services are available in over seven hundred cities
+            worldwide, making us excellent in arranging smooth business and leisure trips.</p>
+
+          <div class="image">
+            <img src="assets/img/map.gif">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="global-cards">
+          <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-4" *ngFor="let item of data">
+              <div class="plain-card">
+                <img src={{item.image}}>
+                <h5>{{item.name}}</h5>
+                <p>{{item.text}}</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="book-online text-center">
+          <div class="row justify-content-center">
+
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="plain-card">
+                <h5>Book Your Ride</h5>
+                <p>Book your ride online, email or sms and we will take care the rest</p>
+                <div class="global-btn">
+                  <a href="https://accounts.oregontowncar.com/signup?_ga=2.10048629.1511972844.1638713728-1699903475.1637752276"
+                    class="main-btn pink text-uppercase">sign up</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

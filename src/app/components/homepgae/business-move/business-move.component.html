@@ -1,0 +1,30 @@
+<div class="business" style="background-image: url(assets/img/bg2.jpg);">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12">
+        <div class="business-heading">
+          <h1>Simplify how your Business move</h1>
+          <p>Everywhere your Business needs to go</p>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="main">
+          <div class="row">
+
+            <div class="col-12 col-md-4 col-lg-4" *ngFor="let item of data">
+              <div class="plain-card">
+                <img src={{item.image}}>
+                <h6>{{item.name}}</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+

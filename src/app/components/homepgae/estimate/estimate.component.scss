@@ -1,0 +1,48 @@
+@import "../../../../styles.scss";
+
+.estimate{
+  background-color: #cee3e2;
+  padding: 3.75rem 0;
+  @include respond(mobile) {
+    padding: 3.75rem 0 0 0;
+  }
+  .main-estimate{
+    .left{
+      h1{
+        font-size: 1.875rem;
+        font-weight: 600;
+        color: black;
+      }
+      .form-group{
+        position: relative;
+        i{
+          position: absolute;
+          top: 14px;
+          left: 14px;
+          &.purple{
+            color: $purple;
+          }
+        }
+        input{
+          padding-left: 2.813rem;
+        }
+      }
+      .estimate-btn{
+        margin-top: 2.5rem;
+      }
+    }
+    .right{
+      @include respond(mobile) {
+        margin-top: 1.875rem;
+      }
+      img{
+        width: 350px;
+        height: 300px;
+        float: right;
+        @include respond(mobile) {
+          float: unset;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../../../styles.scss";
+
+.president{
+  padding: 3.75rem 0;
+  .president-inner{
+    margin-top: 3.125rem;
+    p{
+      font-size: 0.938rem;
+      color: $darkgray;
+      padding-top: 1.25rem;
+      @include respond(tablet) {
+        font-size: 1.063rem;
+      }
+    }
+    .name{
+      margin-top: 1.875rem;
+      p{
+        font-size: 0.938rem;
+        color: $black;
+        padding-top: 0.313rem;
+        font-weight: 600;
+        @include respond(tablet) {
+          font-size: 1.063rem;
+        }
+      }
+    }
+  }
+}

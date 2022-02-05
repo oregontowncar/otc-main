@@ -1,0 +1,55 @@
+@import "../../../styles.scss";
+
+.privacy{
+  padding: 3.75rem 0;
+  .privacy-inner{
+    margin-top: 3.125rem;
+    p{
+      padding-top: 0.625rem;
+      color: $darkgray;
+      font-size: 0.875rem;
+      @include respond(tablet) {
+        font-size: 1.063rem;
+      }
+    }
+    .type{
+      margin-top: 2.188rem;
+      ul{
+        padding-left: 0;
+        list-style: none;
+        li{
+          font-size: 0.938rem;
+          padding-top: 0.938rem;
+          color: $darkgray;
+          @include respond(tablet) {
+            font-size: 1.063rem;
+          }
+          i{
+            color: $orange;
+            padding-right: 0.5rem;
+          }
+        }
+      }
+    }
+    .points{
+      margin-top: 2.188rem;
+      h6{
+        font-size: 1rem;
+        @include respond(tablet) {
+          font-size: 1.125rem;
+        }
+      }
+      p{
+        padding-top: 0.625rem;
+        color: $darkgray;
+        font-size: 0.875rem;
+        @include respond(tablet) {
+          font-size: 1.063rem;
+        }
+        a{
+          color: $orange;
+        }
+      }
+    }
+  }
+}

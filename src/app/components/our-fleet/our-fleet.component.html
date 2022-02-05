@@ -1,0 +1,43 @@
+<div class="our-fleet">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12">
+        <div class="page-header">
+          <div class="main-header">
+            <h1>Our Fleet</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="fleet-inner">
+          <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-4" *ngFor="let item of data">
+              <div class="plain-card">
+                <h5>{{item.name}}</h5>
+                <img src={{item.image}}>
+
+                <div class="types">
+                  <p><i class="fas fa-check"></i> {{item.passengers}}</p>
+                  <p><i class="fas fa-check"></i> {{item.bags}}</p>
+                </div>
+
+                <div class="types">
+                  <p><i class="fas fa-check"></i> {{item.private}}</p>
+                  <p><i class="fas fa-check"></i> {{item.budget}}</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,56 @@
+@import "../../../../styles.scss";
+
+.airport{
+  padding: 3.75rem 0;
+  .airport-inner{
+    margin-top: 3.125rem;
+    .image{
+      text-align: center;
+      margin-top: 1.25rem;
+      img{
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+        @include respond(mobileM) {
+          width: 300px;
+          height: 240px;
+        }
+      }
+    }
+    p{
+      color: $darkgray;
+      padding-top: 1.25rem;
+      font-size: 0.938rem;
+      @include respond(tablet) {
+        font-size: 1.063rem;
+      }
+    }
+    ul{
+      padding-left: 0;
+      list-style: none;
+      margin-top: 1.875rem;
+      li{
+        padding-top: 0.438rem;
+        font-size: 0.938rem;
+        color: $darkgray;
+        @include respond(tablet) {
+          font-size: 1.063rem;
+        }
+        i{
+          padding-right: 0.625rem;
+          color: $purple;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@include respond(tablet) {
+
+}

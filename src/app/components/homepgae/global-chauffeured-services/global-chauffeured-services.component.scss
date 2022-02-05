@@ -1,0 +1,39 @@
+@import "../../../../styles.scss";
+
+.global{
+  padding: 3.75rem 0;
+  .main-global{
+    .global-text{
+      h5{
+        font-size: 1rem;
+        font-weight: 600;
+        color: $black;
+      }
+      h1{
+        font-size: 2.5rem;
+        padding-top: 0.625rem;
+        color: $black;
+        font-weight: 600;
+        @include respond(tablet) {
+          font-size: 1.875rem;
+        }
+      }
+      p{
+        font-size: 0.938rem;
+        padding-top: 1.25rem;
+        color: $darkgray;
+        @include respond(tablet) {
+          font-size: 1rem;
+        }
+      }
+    }
+    .image{
+      img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}

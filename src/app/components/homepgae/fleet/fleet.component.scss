@@ -1,0 +1,76 @@
+@import "../../../../styles.scss";
+
+.fleet {
+  background-color: #ebebff;
+  padding: 3.75rem 0;
+  .fleet-heading {
+    text-align: center;
+    h1 {
+      font-size: 2.5rem;
+      color: $black;
+      font-weight: 600;
+    }
+    p {
+      padding-top: 0.625rem;
+      color: $darkgray;
+      font-size: 0.938rem;
+    }
+  }
+  .fleet-cards {
+    margin-top: 2.5rem;
+    @include respond(tablet) {
+      margin-top: 0.625rem;
+    }
+    .plain-card {
+      text-align: center;
+      background-color: #f9f9f9;
+      @include respond(tablet) {
+        margin-top: 25px;
+      }
+      h5 {
+        color: #0c0b31;
+        font-size: 1.125rem;
+        font-weight: 600;
+        @include respond(tablet) {
+          font-size: 1.25rem;
+        }
+      }
+      img {
+        margin-top: 0.938rem;
+        width: 110px;
+        height: 80px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .types {
+        padding-top: 0.938rem;
+        p {
+          font-size: 0.813rem;
+          color: $darkgray;
+          padding-top: 0.313rem;
+          @include respond(tablet) {
+            font-size: 0.938rem;
+          }
+          @include respond(mobile) {
+            font-size: 1.063rem;
+          }
+          i{
+            color: $purple;
+            font-size: 13px;
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+    p {
+      &.wrapper {
+        color: $darkgray;
+        font-size: 0.688rem;
+        padding-top: 3.125rem;
+        @include respond(tablet) {
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}

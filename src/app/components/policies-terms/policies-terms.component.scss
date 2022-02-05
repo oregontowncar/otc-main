@@ -1,0 +1,40 @@
+@import "../../../styles.scss";
+
+.policies{
+  padding: 3.75rem 0;
+  .policies-inner{
+    margin-top: 3.125rem;
+    h5{
+      font-size: 1.188rem;
+      color: $black;
+    }
+    p{
+      padding-top: 0.625rem;
+      color: $darkgray;
+      font-size: 0.875rem;
+    }
+    .type{
+      margin-top: 2.188rem;
+      ul{
+        padding-left: 0;
+        list-style: none;
+        li{
+          font-size: 0.938rem;
+          padding-top: 0.938rem;
+          color: $darkgray;
+          @include respond(mobile) {
+            font-size: 1.063rem;
+          }
+          i{
+            color: $orange;
+            padding-right: 0.5rem;
+          }
+          span{
+            color: $black;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<div class="header">
+  <div class="container">
+    <div class="toggleContainer" (click)="toggleMenu()" [ngClass]="{'change': toggleButton}">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <div class="logo">
+          <a routerLink="/homepage">Oregon Town Car</a>
+        </div>
+      </div>
+
+      <div class="col-9">
+        <div class="nav">
+          <ul>
+            <li><a routerLink="/homepage">Home</a></li>
+            <li><a routerLink="/ourservices">Services</a></li>
+            <li><a routerLink="/ourfleet">Our Fleet</a></li>
+            <li><a routerLink="/aboutus">About Us</a></li>
+            <li><a routerLink="/blog">Blog</a></li>
+
+            <div class="header-btn">
+              <a href="https://accounts.oregontowncar.com/" class="main-btn pink text-uppercase">Book Online</a>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="sidebar side" [ngClass]="{'show': sidebar}">
+  <ul>
+    <li><a routerLink="/homepage" (click)="toggleMenu()">Home</a></li>
+    <li><a routerLink="/ourservices" (click)="toggleMenu()">Services</a></li>
+    <li><a routerLink="/ourfleet" (click)="toggleMenu()">Our Fleet</a></li>
+    <li><a routerLink="/aboutus" (click)="toggleMenu()">About Us</a></li>
+    <li><a routerLink="/blog" (click)="toggleMenu()">Blog</a></li>
+
+    <div class="header-btn">
+      <a href="https://accounts.oregontowncar.com/" class="main-btn pink text-uppercase">Book Online</a>
+    </div>
+
+    <div class="bottom-thing">
+      <a href="tel:+923312767841"><i class="fas fa-question-circle"></i> Need Help ?</a>
+    </div>
+  </ul>
+</div>
+
+<div class="fade-area" [ngClass]="{'show': fadeSection}" (click)="toggleMenu()"></div>

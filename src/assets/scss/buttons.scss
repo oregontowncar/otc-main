@@ -1,0 +1,23 @@
+.main-btn {
+  border-radius: 8px;
+  text-align: center;
+  border: 0;
+  padding: 7px 30px;
+  font-size: 15px;
+  cursor: pointer;
+  color: $white;
+  &.green {
+    background: $greenGradient;
+    box-shadow: 0 5px 12px 0 rgb(68 202 65 / 35%);
+  }
+  &.pink {
+    background: $default;
+    box-shadow: 0 5px 12px 0 rgb(245 40 110 / 35%);
+    &:hover{
+      background: linear-gradient(77deg, #ff2c74, #c95634);
+    }
+  }
+  i {
+    margin-right: 7px;
+  }
+}

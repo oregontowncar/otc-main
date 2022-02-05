@@ -1,0 +1,165 @@
+@import "../../../../styles.scss";
+
+.about{
+  padding: 3.75rem 0;
+  .about-inner{
+    margin-top: 3.125rem;
+    .texts{
+      h4{
+        font-size: 1.25rem;
+        color: $black;
+        font-weight: 600;
+        @include respond(tablet) {
+          font-size: 1.563rem;
+        }
+      }
+      .seprator{
+        width: 8%;
+        height: 3px;
+        background: $default;
+        margin-top: 0.938rem;
+        @include respond(tablet) {
+          width: 15%;
+        }
+      }
+      p{
+        padding-top: 1.875rem;
+        color: $darkgray;
+        font-size: 0.938rem;
+        @include respond(tablet) {
+          font-size: 1rem;
+        }
+        a{
+          color: #fc6d43;
+          font-weight: 500;
+        }
+      }
+    }
+    .image{
+      float: right;
+      @include respond(mobile) {
+        float: unset;
+        text-align: center;
+        margin-top: 1.25rem;
+      }
+      img{
+        border: 0.188rem solid #ebebeb;
+        border-radius: 9.375rem;
+        box-shadow: 0px 0.125rem 0.5rem 0px #dfdfdf;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+        padding: 0.313rem;
+        margin-right: 0.938rem;
+        @include respond(tablet) {
+          width: 200px;
+          height: 200px;
+        }
+        @include respond(mobile) {
+          width: 220px;
+          height: 220px;
+          margin-right: 0.313rem;
+        }
+      }
+      h6{
+        text-align: center;
+        color: $black;
+        font-size: 1.25rem;
+        padding-top: 0.625rem;
+        @include respond(tablet) {
+          font-size: 1.375rem;
+        }
+      }
+      p{
+        color: $darkgray;
+        text-align: center;
+        font-size: 0.813rem;
+        padding-top: 0.313rem;
+        @include respond(tablet) {
+          font-size: 0.938rem;
+        }
+      }
+    }
+  }
+  .about-chips{
+    margin-top: 4.375rem;
+    @include respond(tablet) {
+      margin-top: 0;
+    }
+    .main-chip{
+      @include respond(tablet) {
+        margin-top: 5rem;
+        text-align: center;
+      }
+      .main-btn{
+        padding: 1.563rem 1.25rem;
+        font-size: 0.938rem;
+      }
+      i{
+        color: $white;
+        padding-left: 0.938rem;
+        font-size: 0.875rem;
+      }
+    }
+  }
+  .about-mission{
+    .texts{
+      margin-top: 5rem;
+      h4{
+        font-size: 1.25rem;
+        color: $black;
+        font-weight: 600;
+        @include respond(tablet) {
+          font-size: 1.563rem;
+        }
+      }
+      .seprator{
+        width: 8%;
+        height: 3px;
+        background: $default;
+        margin-top: 0.938rem;
+        @include respond(tablet) {
+          width: 15%;
+        }
+      }
+      p{
+        padding-top: 1.875rem;
+        color: $darkgray;
+        font-size: 0.938rem;
+        @include respond(tablet) {
+          font-size: 1rem;
+        }
+      }
+    }
+    .plain-card{
+      text-align: center;
+      width: 100%;
+      height: 350px;
+      margin-top: 3.125rem;
+      img{
+        width: 200px;
+        height: auto;
+      }
+      h5{
+        font-size: 1.125rem;
+        color: $black;
+      }
+      p{
+        font-size: 0.875rem;
+        padding: 0.625rem 1.875rem 0px 1.875rem;
+        color: $darkgray;
+        @include respond(mobile) {
+          font-size: 16px;
+          padding: 0.625rem 0.313rem 0px 0.313rem;
+        }
+      }
+      .feedback-btn{
+        margin-top: 1.563rem;
+        .main-btn{
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}
